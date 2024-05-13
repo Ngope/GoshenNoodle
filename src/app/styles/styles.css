@@ -1,0 +1,105 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: auto;
+  }
+  
+  .landingPage {
+    text-align: center;
+    padding: 240px 0;
+  }
+
+  .landingPage h1{
+    font-size: 64px;
+    font-weight: bold;
+  }
+
+.infoSection {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .infoBox {
+    width: 50%;
+    padding: 20px;
+  }
+  
+  .hr {
+    width: 100%;
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+  }
+  
+  .menu {
+    text-align: center;
+  }
+  
+  .menuCategory {
+    margin-bottom: 20px;
+  }
+  
+  .menuCategory h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .menuCategory ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menuCategory ul li {
+    margin: 5px 0;
+  }
+
+
+  /* styles.css */
+
+.navbar {
+    background-color: #2f4f4f;
+    color: white;
+    padding: 10px 36px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .logo img {
+    width: 30px; /* Adjust the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    /* margin-right: 10px; Add some spacing between the image and text */
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: none;
+  }
+  
+
+  .footer {
+    background-color: #333; /* Dark background color */
+    color: white;
+    padding: 20px 0; /* Add some padding for spacing */
+    text-align: center;
+  }
