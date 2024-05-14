@@ -1,5 +1,7 @@
 
 import styles from './styles/styles.css'; // Importing CSS styles
+import PNGRain from './pngRain';
+import Jumbotron from './jumbotron';
 
 export default function Home() {
   return (
@@ -15,35 +17,28 @@ export default function Home() {
         </ul>
       </nav>
       <main className="container">
+        <PNGRain />
         <div className="landingPage">
-        <div class="fading-letters">
-            <span class="letter">G</span>
-            <span class="letter">o</span>
-            <span class="letter">s</span>
-            <span class="letter">h</span>
-            <span class="letter">e</span>
-            <span class="letter">n</span>
-            <span class="letter">&nbsp;</span> 
-            <span class="letter">N</span>
-            <span class="letter">o</span>
-            <span class="letter">o</span>
-            <span class="letter">d</span>
-            <span class="letter">l</span>
-            <span class="letter">e</span>
-            <span class="letter">s</span>
-        </div>
+          <h1 className="letter">Goshen Noodles</h1>
           <p class="letter2">Discover the authentic taste of Vietnam.</p>
         </div>
         <hr className="hr" />
+        <div className="bg-gray-900 text-white py-24 px-10">
+          <div className="max-w-4xl mx-auto">
+            <h1 className="text-4xl font-bold mb-4">My Jumbotron</h1>
+            <Jumbotron/>
+          </div>
+        </div>
+        <hr className="hr" />
         <div className="infoSection">
-          <div>
+          <div className="infoBoxes">
             <div className="infoBox">
-              <h2>Restaurant Information</h2>
+              <h2 className="bold">Restaurant Information</h2>
               <p>1303 College</p>
               <p>Goshen, IN 46526</p>
             </div>
             <div className="infoBox">
-              <h2>Contact</h2>
+              <h2 className="bold">Contact</h2>
               <p>Phone: (574) 534-1793</p>
               <p>Hours:</p>
               <p>Mon: 11am - 7pm</p>

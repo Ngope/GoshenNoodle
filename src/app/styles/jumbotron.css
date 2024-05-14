@@ -1,0 +1,22 @@
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .slide {
+    display: none;
+    width: 100%;
+    height: auto;
+  }
+  
+  .slide img {
+    width: 50%;
+    height: auto;
+  }
+  
+  .active {
+    display: block;
+  }
