@@ -9,12 +9,7 @@
   
   .landingPage {
     text-align: center;
-    padding: 240px 0;
-  }
-
-  .landingPage h1{
-    font-size: 64px;
-    font-weight: bold;
+    padding: 280px 0;
   }
 
 .infoSection {
@@ -24,7 +19,7 @@
   }
   
   .infoBox {
-    width: 50%;
+    width: 100%;
     padding: 20px;
   }
   
@@ -63,9 +58,10 @@
 .navbar {
     background-color: #2f4f4f;
     color: white;
-    padding: 10px 36px;
+    padding: 10px 42px;
     display: flex;
     justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
   
   .logo {
@@ -102,4 +98,46 @@
     color: white;
     padding: 20px 0; /* Add some padding for spacing */
     text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .google-map-container {
+    padding: 16px 0;
+    margin: auto;
+  }
+
+  .google-map {
+    width: 400px; /* Set the width */
+    height: 300px; /* Set the height */
+    border: 0; /* Remove the border */
+  }
+
+
+.fading-letters {
+    display: inline-block;
+  }
+  
+  .letter {
+    font-size: 64px;
+    font-weight: bold;
+    opacity: 0; /* Initially hide the letters */
+    animation: fade-in 1s forwards; /* Apply fade-in animation */
+  }
+
+  .letter2{
+    font-size: 18px;
+    opacity: 0; /* Initially hide the letters */
+    animation: fade-in 3s forwards; /* Apply fade-in animation */
+  }
+  
+  /* Keyframes for fading in */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(-20px); /* Optional: Start from slightly above */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Optional: End at original position */
+    }
   }
