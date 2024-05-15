@@ -23,7 +23,7 @@ const Jumbotron = () => {
           </div>
         ))}
         <button className="prev absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-2 rounded-l-md" onClick={prevSlide}>&#10094;</button>
-      <button className="next absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-2 rounded-r-md" onClick={nextSlide}>&#10095;</button>
+        <button className="next absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-2 rounded-r-md" onClick={nextSlide}>&#10095;</button>
       </div>
     );
   };

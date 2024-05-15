@@ -38,20 +38,31 @@
     width: 100%;
     margin: 20px 0;
     border: none;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid white;
   }
   
   .menu {
     text-align: center;
   }
+
+  .menu h1 {
+    font-size: 29px;
+    padding: 20px 0;
+    margin: auto;
+  }
   
   .menuCategory {
     margin-bottom: 20px;
+    background: white;
+    border-radius: 3%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    padding: 24px;
   }
-  
+
   .menuCategory h3 {
     font-size: 20px;
     margin-bottom: 10px;
+    text-decoration: underline;
   }
   
   .menuCategory ul {
@@ -63,6 +74,21 @@
     margin: 5px 0;
   }
 
+  /* .price {
+    padding: 0 16px;
+  } */
+  
+  .foodItems{
+    text-align: left;
+  }
+
+  .options {
+    padding-left: 24px;
+  }
+
+  .priceItems{
+    text-align: right;
+  }
 
   /* styles.css */
 
@@ -145,13 +171,19 @@
     font-weight: bold;
   }
 
+  .menuItem{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
   .png-rain {
     width: '100px';
     height: 'auto';
     position: absolute;
     pointer-events: none; /* Ensures that the PNG elements do not interfere with mouse events */
   }
-  
+
   @keyframes falling {
     from {
       transform: translateY(-10%);
