@@ -34,6 +34,7 @@
     outline: none;
     padding: 10px 15px;
     border-radius: 0;
+    margin: 0 36px;
   }
   
   /* Positioning for the previous button */
@@ -44,4 +45,24 @@
   /* Positioning for the next button */
   .next {
     right: 0;
+  }
+
+  /* Media query for smaller screens */
+@media (max-width: 768px) {
+    .slideshow-container {
+      height: 300px; /* Adjust height for smaller screens */
+    }
+    
+    .slide img {
+      width: 100%; /* Make images fill the container width */
+      height: 100%; /* Make images fill the container height */
+    }
+    
+    .prev,
+    .next {
+        padding: 2px 8px;
+        top: 102px;
+        right: 0px;
+        margin: 0 -36px;
+    }
   }

@@ -186,7 +186,7 @@ export default function Home() {
                 </div>
               </li>
             </ul>
-            <p><i>Served with a side of bean sprouts, japalenos, and lime.</i></p>
+            <p><i>Served with a side of bean sprouts, japalenos, and lime. L=Large & S=Small</i></p>
           </div>
           <div className="menuCategory">
             <h3>Vietnamese Sandwiches (Banh Mi)</h3>

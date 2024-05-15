@@ -72,6 +72,7 @@
   
   .menuCategory ul li {
     margin: 5px 0;
+    text-align: left;
   }
 
   /* .price {
@@ -173,7 +174,7 @@
 
   .menuItem{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
   }
 
@@ -220,5 +221,8 @@
     
       .letter2{
         font-size: 16px;
+      }
+      .options {
+        padding-left: 0px;
       }
 }
