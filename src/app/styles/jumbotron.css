@@ -1,22 +1,47 @@
 .slideshow-container {
     position: relative;
-    width: 100%;
-    max-width: 800px; /* Adjust the maximum width as needed */
-    margin: auto;
-    overflow: hidden;
+    width: 100%; /* Adjust width as needed */
+    height: 500px;
   }
   
+  /* CSS for the individual slides */
   .slide {
     display: none;
-    width: 100%;
-    height: auto;
   }
-  
   .slide img {
-    width: 50%;
-    height: auto;
+    margin:auto;
+    width: 75%; /* Make all images fill the container width */
+    height: 100%; /* Make all images fill the container height */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
   }
   
+  /* Show the active slide */
   .active {
     display: block;
+  }
+  
+  /* CSS for the previous and next buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    background-color: #4a5568; /* Adjust background color */
+    color: #ffffff; /* Adjust text color */
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 0;
+  }
+  
+  /* Positioning for the previous button */
+  .prev {
+    left: 0;
+  }
+  
+  /* Positioning for the next button */
+  .next {
+    right: 0;
   }

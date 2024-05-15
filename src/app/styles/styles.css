@@ -11,7 +11,7 @@
   
   .landingPage {
     text-align: center;
-    padding: 280px 0;
+    padding: 300px 0;
   }
 
   .infoSection {
@@ -30,7 +30,7 @@
 
   .infoBoxes{
     background: white;
-    border-radius: 5%;
+    border-radius: 15px;;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
   }
   
@@ -54,7 +54,7 @@
   .menuCategory {
     margin-bottom: 20px;
     background: white;
-    border-radius: 3%;
+    border-radius: 15px;;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
     padding: 24px;
   }

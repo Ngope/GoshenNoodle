@@ -23,9 +23,8 @@ export default function Home() {
           <p class="letter2">Discover the authentic taste of Vietnam.</p>
         </div>
         <hr className="hr" />
-        <div className="bg-gray-900 text-white py-24 px-10">
+        <div className="text-white py-24 px-10">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl font-bold mb-4">My Jumbotron</h1>
             <Jumbotron/>
           </div>
         </div>
