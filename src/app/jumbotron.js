@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import jumbotron from './styles/jumbotron.css';
 
 const Jumbotron = () => {
-    const images = ['/pho.png', '/csw.jpg', 'vermicelli.jpg'];
+    const images = ['/pho.png', '/csw.jpg', 'vermicelli.jpg', 'crabrangoon.jpg'];
     const [currentSlide, setCurrentSlide] = useState(0);
   
     const nextSlide = () => {
