@@ -100,6 +100,9 @@
     display: flex;
     justify-content: space-between;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
   }
   
   .logo {
@@ -208,11 +211,12 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 786px) {
     .infoSection {
         flex-direction: column; /* Stack items vertically */
         align-items: center; /* Center items horizontally */
     }
+
     .letter {
         font-size: 38px;
         font-weight: bold;
@@ -222,7 +226,14 @@
       .letter2{
         font-size: 16px;
       }
+
       .options {
         padding-left: 0px;
+      }
+
+      .navbar{
+        position: sticky !important;
+        top: 0;
+        z-index: 1000;
       }
 }

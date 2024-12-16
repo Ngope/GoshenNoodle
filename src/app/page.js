@@ -246,7 +246,6 @@ export default function Home() {
               </li>
             </ul>
           </div>
-          {/* Add more menu categories as needed */}
         </div>
       </main>
       <footer className="footer">
