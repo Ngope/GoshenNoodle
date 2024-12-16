@@ -1,6 +1,5 @@
 
 import styles from './styles/styles.css'; // Importing CSS styles
-import PNGRain from './pngRain';
 import Jumbotron from './jumbotron';
 
 export default function Home() {
@@ -17,7 +16,6 @@ export default function Home() {
         </ul>
       </nav>
       <main className="container">
-        <PNGRain />
         <div className="landingPage">
           <h1 className="letter">Goshen Noodles</h1>
           <p class="letter2">Discover the authentic taste of Vietnam.</p>
