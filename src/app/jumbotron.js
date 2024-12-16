@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import jumbotron from './styles/jumbotron.css';
-// const slides = ['/bowl-of-hot-pho.png', '/testpeterson.png', '/peterugly.jpg']; // Add the paths to your slideshow images
 
 const Jumbotron = () => {
     const images = ['/pho.png', '/csw.jpg', 'vermicelli.jpg'];
