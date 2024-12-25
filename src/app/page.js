@@ -1,29 +1,19 @@
 
 import styles from './styles/styles.css'; // Importing CSS styles
-import Jumbotron from './jumbotron';
+import Jumbotron from './components/jumbotron';
+import Navbar from './components/Navbar';
+import Landing from './components/Landing';
 
 export default function Home() {
   return (
     <div>
-      <nav className="navbar">
-        <div className="logo">
-            <img src="/favicon.ico" alt="Goshen Noodles Logo" href= "/"/>
-        </div>
-        <ul className="nav-links">
-          <li><a href="#Menu">Menu</a></li>
-          <li><a href="#About">About</a></li>
-          <li><a href="#Contact">Contact</a></li>
-        </ul>
-      </nav>
+      <Navbar />
       <main className="container">
-        <div className="landingPage">
-          <h1 className="letter">Goshen Noodles</h1>
-          <p class="letter2">Discover the authentic taste of Vietnam.</p>
-        </div>
+        <Landing />
         <hr className="hr" />
         <div className="text-white py-24 px-10">
           <div className="max-w-4xl mx-auto">
-            <Jumbotron/>
+            <Jumbotron />
           </div>
         </div>
         <hr className="hr" />

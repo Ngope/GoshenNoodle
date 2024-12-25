@@ -1,18 +1,49 @@
 .container {
-    width: 90%;     
-    max-width: 1200px;
+    width: 100%;     
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    margin: auto;
   }
   
   .landingPage {
+    position: relative; /* Ensure the pseudo-element is positioned relative to the .landingPage */
     text-align: center;
     padding: 300px 0;
+    background-image: url('/pho.png');
+    background-size: cover; /* Ensure the image covers the entire element */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    width: 100%; /* Ensure the div spans the full width */
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    overflow: hidden; 
   }
+
+  .landingPage::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(71, 71, 71, 0.7); /* Semi-transparent overlay */
+    z-index: 1; /* Ensure the overlay is above the background image */
+}
+
+.landingPage .content {
+  position: relative;
+  z-index: 2; /* Ensure the content is above the overlay */
+  color: white; /* Ensure the text color is white */
+  opacity: 1; /* Ensure the text is visible */
+  font-family: 'Afacad', sans-serif;
+  top: -100px;
+}
+
+.landingPage h1, .landingPage p {
+  margin: 0;
+  padding: 0;
+}
 
   .infoSection {
     display: flex;
@@ -75,9 +106,6 @@
     text-align: left;
   }
 
-  /* .price {
-    padding: 0 16px;
-  } */
   
   .foodItems{
     text-align: left;
@@ -94,11 +122,11 @@
   /* styles.css */
 
 .navbar {
-    background-color: #2f4f4f;
+    background-color: #FFBB46;
     color: white;
-    padding: 10px 42px;
+    padding: 8px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     position: sticky;
     top: 0;
@@ -121,12 +149,15 @@
   }
   
   .nav-links li {
-    margin-right: 20px;
+    margin-right: 60px;
   }
   
   .nav-links a {
     color: white;
     text-decoration: none;
+    font-family: 'Afacad', sans-serif;
+    font-size:  32px;
+    letter-spacing: 1px;
   }
   
   .nav-links a:hover {
@@ -159,16 +190,29 @@
   }
   
   .letter {
-    font-size: 64px;
-    font-weight: bold;
+    font-size: 121px;
     opacity: 0; /* Initially hide the letters */
     animation: fade-in 1s forwards; /* Apply fade-in animation */
+    color: white;
+    line-height: 1.1; /* Adjust the line height for spacing between lines */
+    text-align: center; /* Center the text */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    color: white; /* Ensure the text color is white */
+    font-family: 'Afacad', sans-serif; /* Apply the Afacad font */
   }
 
   .letter2{
-    font-size: 18px;
+    font-size: 32px;
     opacity: 0; /* Initially hide the letters */
-    animation: fade-in 3s forwards; /* Apply fade-in animation */
+    animation: fade-in 1s forwards; /* Apply fade-in animation */
+    color: white;
+    line-height: 1.1; /* Adjust the line height for spacing between lines */
+    text-align: center; /* Center the text */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    color: white; /* Ensure the text color is white */
+    font-family: 'Afacad', sans-serif; /* Apply the Afacad font */
   }
 
   .bold {
