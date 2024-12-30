@@ -262,22 +262,22 @@
     }
 
     .letter {
-        font-size: 38px;
-        font-weight: bold;
-
-      }
-    
-      .letter2{
-        font-size: 16px;
-      }
-
-      .options {
-        padding-left: 0px;
-      }
-
-      .navbar{
-        position: sticky !important;
-        top: 0;
-        z-index: 1000;
-      }
-}
+      font-size: 38px;
+      font-weight: bold;
+  }
+  
+  .letter2 {
+      font-size: 16px;
+  }
+  
+  .options {
+      padding-left: 0px;
+  }
+  
+  .navbar {
+      position: sticky !important;
+      top: 0;
+      z-index: 1000;
+  }
+  
+    }
