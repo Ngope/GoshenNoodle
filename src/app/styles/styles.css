@@ -47,9 +47,11 @@
 
   .infoSection {
     display: flex;
-    flex-flow: row wrap;
-    align-items: center; /* Center items horizontally */
-    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
 }
   
   .infoBox {
@@ -61,8 +63,16 @@
 
   .infoBoxes{
     background: white;
-    border-radius: 15px;;
+    border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  }
+
+  .contactBackground {
+    width: 100%;
+    background-color: #F45B42;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
   }
   
   .hr {
@@ -105,7 +115,6 @@
     margin: 5px 0;
     text-align: left;
   }
-
   
   .foodItems{
     text-align: left;
@@ -124,9 +133,6 @@
   .navbar {
     /* background-color: #2f4f4f; */
     color: white;
-    padding: 10px 42px;
-    display: flex;
-    justify-content: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     position: sticky;
     top: 0;
@@ -134,33 +140,21 @@
     align-items: center;
   }
   
-  .logo {
-    font-size: 1.5rem;
-  }
-
-  .logo img {
-    width: 30px; /* Adjust the width of the image */
-    height: auto; /* Maintain aspect ratio */
-    /* margin-right: 10px; Add some spacing between the image and text */
-  }
-  
   .nav-links {
-    list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
   }
   
   .nav-links li {
-    margin-right: 0;
+    margin: 8px 16px;
   }
   
   .nav-links a {
     text-decoration: none;
-    color: white;
-    padding: 10px 20px;
-    display: block;
+    font-family: 'Afacad', sans-serif;
+    font-size:  24px;
+    letter-spacing: 1px;
   }
   
   .nav-links a:hover {
@@ -177,7 +171,7 @@
   }
 
   .google-map-container {
-    padding: 48px;
+    padding: 48px 0;
     margin: auto;
   }
 
@@ -185,6 +179,7 @@
     width: 400px; /* Set the width */
     height: 300px; /* Set the height */
     border: 0; /* Remove the border */
+    border-radius: 15px;
   }
 
 
@@ -259,10 +254,8 @@
         align-items: center; /* Center items horizontally */
     }
 
-
-
-  .letter {
-      font-size: 38px;
+    .letter {
+      font-size: 48px;
       font-weight: bold;
   }
   
