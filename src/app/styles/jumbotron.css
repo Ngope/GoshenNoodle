@@ -1,7 +1,10 @@
 .slideshow-container {
     position: relative;
     width: 100%; /* Adjust width as needed */
+    max-width: 1000px;
     height: 500px;
+    margin: auto;
+    overflow: hidden;
   }
   
   /* CSS for the individual slides */
@@ -10,9 +13,12 @@
   }
   .slide img {
     margin:auto;
-    width: 75%; /* Make all images fill the container width */
-    height: 100%; /* Make all images fill the container height */
+    width: 80%; 
+    height: 100%;
     object-fit: cover; /* Maintain aspect ratio and cover the container */
+    display: block;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
   }
   
   /* Show the active slide */
