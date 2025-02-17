@@ -6,6 +6,7 @@ import Landing from './components/Landing';
 import Menu from './components/Menu';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
+import { Analytics } from "@vercel/analytics/react"
 
 export default function Home() {
   return (
@@ -24,6 +25,8 @@ export default function Home() {
        <Menu />
       </main>
       <Footer />
+      <Analytics />
     </div>
+    
   );
 }
