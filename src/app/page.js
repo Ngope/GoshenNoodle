@@ -1,5 +1,5 @@
 
-import styles from './styles/styles.css'; // Importing CSS styles
+import styles from './styles/styles.css';
 import Jumbotron from './components/Jumbotron';
 import Navbar from './components/Navbar';
 import Landing from './components/Landing';
