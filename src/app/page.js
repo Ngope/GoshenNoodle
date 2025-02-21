@@ -1,6 +1,6 @@
 
 import styles from './styles/styles.css';
-import Jumbotron from './components/Jumbotron';
+import Jumbotron from './components/jumbotron';
 import Navbar from './components/Navbar';
 import Landing from './components/Landing';
 import Menu from './components/Menu';
