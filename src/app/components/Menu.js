@@ -1,25 +1,25 @@
 function Item({ name, note, price }) {
   return (
-    <li className="flex justify-between items-start py-1.5 border-b border-gray-50 last:border-0">
+    <li className="flex justify-between items-start py-3 border-b border-gray-100 last:border-0">
       <div>
-        <p className="text-sm">{name}</p>
-        {note && <p className="text-xs text-gray-400 italic pl-3">{note}</p>}
+        <p className="text-sm text-gray-800">{name}</p>
+        {note && <p className="text-xs text-gray-400 italic mt-0.5">{note}</p>}
       </div>
-      <span className="text-sm font-medium ml-4 shrink-0">{price}</span>
+      <span className="text-sm font-semibold ml-6 shrink-0 tabular-nums text-gray-900">{price}</span>
     </li>
   );
 }
 
 function ItemSized({ name, note, large, small }) {
   return (
-    <li className="flex justify-between items-start py-1.5 border-b border-gray-50 last:border-0">
+    <li className="flex justify-between items-start py-3 border-b border-gray-100 last:border-0">
       <div>
-        <p className="text-sm">{name}</p>
-        {note && <p className="text-xs text-gray-400 italic pl-3">{note}</p>}
+        <p className="text-sm text-gray-800">{name}</p>
+        {note && <p className="text-xs text-gray-400 italic mt-0.5">{note}</p>}
       </div>
-      <div className="text-right ml-4 shrink-0">
-        <p className="text-sm font-medium">L: {large}</p>
-        <p className="text-sm font-medium">S: {small}</p>
+      <div className="text-right ml-6 shrink-0">
+        <p className="text-xs font-semibold tabular-nums text-gray-900">L: {large}</p>
+        <p className="text-xs font-semibold tabular-nums text-gray-500">S: {small}</p>
       </div>
     </li>
   );
@@ -27,8 +27,8 @@ function ItemSized({ name, note, large, small }) {
 
 function Category({ title, note, children }) {
   return (
-    <div className="bg-white rounded-2xl shadow-sm p-6">
-      <h3 className="text-center font-semibold underline mb-4">{title}</h3>
+    <div className="py-6 border-b border-gray-200 last:border-0">
+      <h3 className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-3">{title}</h3>
       <ul>{children}</ul>
       {note && <p className="text-xs text-gray-400 italic mt-4">{note}</p>}
     </div>
@@ -37,7 +37,7 @@ function Category({ title, note, children }) {
 
 export default function Menu() {
   return (
-    <div className="px-4 py-8 max-w-2xl mx-auto space-y-6">
+    <div className="px-6 py-6 max-w-2xl mx-auto">
       <Category
         title="Appetizers"
         note="Reminder that there are multiple choices for that menu item. E.g. Pork or Veggie Eggrolls"
