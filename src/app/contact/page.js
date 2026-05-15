@@ -1,5 +1,5 @@
-import Hero from '../components/Hero';
-import Contact from '../components/Contact';
+import Hero from '@/components/Hero';
+import Contact from '@/components/Contact';
 
 export const metadata = {
   title: "Contact — Goshen Noodles",

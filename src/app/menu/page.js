@@ -1,5 +1,5 @@
-import Hero from '../components/Hero';
-import Menu from '../components/Menu';
+import Hero from '@/components/Hero';
+import Menu from '@/components/Menu';
 
 export const metadata = {
   title: "Menu — Goshen Noodles",
